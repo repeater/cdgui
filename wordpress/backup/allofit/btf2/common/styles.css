@@ -1,0 +1,112 @@
+* {margin:0; padding:0;}
+
+body {font-size:100%; font-family: Verdana,Arial,Sans-serif; text-align:center; background: #fff url(bg.jpg) repeat-x;}
+
+p {}
+a {}
+a:visited {}
+
+h1 {font-size:1.5em;}
+h2 {font-size:1.2em;}
+h3 {font-size:1.05em;}
+
+img {border:0;}
+
+#topcontainer {text-align:left; width:990px; height:30px; margin:0 auto;}
+#topcontainer p {float:right; margin:8px 23px 0 0; font-size:75%; font-weight:bold; color:#fff;}
+
+#headercontainer {text-align:left; width:990px; height:165px; margin:0 auto;}
+#header {height:165px; width: 990px; background: url(bg_header.jpg) no-repeat;}
+#logo {float:left; padding:25px 0 0 40px;}
+
+#maincontainer {text-align:left; width:942px; margin:0 auto; padding: 0 25px 0 25px; background: url(bg_container.png) repeat-y;}
+
+#footercontainer {clear:both; width:100%; height:180px; padding:15px 0 0 0;}
+#footercontainer hr {border:0; width:942px; height:2px; margin:0 auto; text-align:center; background-color:#ccc;}
+#footercontainer #col1 {width:180px; height:150px; margin:20px 0 0 20px; float:left;}
+#footercontainer #col2 {width:180px; height:150px; margin:20px 0 0 20px; float:left;}
+#footercontainer #col3 {width:511px; height:150px; margin:20px 0 0 20px; float:left;}
+
+#footercontainer ul{list-style:none;}
+#footercontainer li{line-height:1.3;}
+#footercontainer a{font-size:75%; font-family:Verdana,Arial,Sans-serif; font-weight:bold; text-decoration:none; color:#333;}
+
+#footercontainer #col1 h3 {font-size:1.0em; font-weight:bold; color:#333; padding:2px 0 5px 25px; background: url(icon_checkmark.jpg) no-repeat;}
+#footercontainer #col2 h3 {font-size:1.0em; font-weight:bold; color:#333; padding:2px 0 5px 25px; background: url(icon_information.jpg) no-repeat;}
+
+#pagefooter {text-align:center; font-size:70%; color:#999; padding:30px 0 20px 0; width:990px; height:13px; margin:0 auto; background: url(bg_footer.jpg) no-repeat;}
+#pagefooter a {color:#999; text-decoration:none;}
+
+#content {float:right; width:720px;}
+#content p {font-size: 90%; line-height:1.4; padding:0 0 10px 0; color:#333;}
+#content p#indent {padding:0 0 0 20px;}
+#content p#quote {padding:0; color:#72953b;}
+#content a {font-weight:normal; color:#333;}
+#content ul {line-height:1.3; padding:0 0 20px 30px;}
+#content ol {line-height:1.3; padding:0 0 20px 30px;}
+#content li {font-size: 90%; line-height:1.3; padding:5px 0 5px 0; color:#333;}
+#content h1 {font-size:2em; font-weight:normal; padding:0 0 3px 0; color:#333;}
+#content h2 {font-size:1.5em; font-weight:normal; padding:0 0 3px 0; color:#333;}
+#content h3 {padding:15px 0 10px 0; color:#333;}
+#content span {font-weight:bold; color:#333;}
+#content span#italic {font-style:italic; font-weight:normal;}
+#content span#bold {font-weight:bold;}
+#content span#underline {text-decoration:underline}
+#content hr {border:0; height:2px; margin:40px 0 50px 0; text-align:center; background-color:#ccc; clear:left;}
+#content #floatleft {float:left; padding:0 10px 0 0;}
+
+#gallery {width:720px;}
+#gallery ul {list-style:none; margin:0 auto; padding:15px 0 0 0; height:250px;}
+#gallery li {display:inline; margin:0; padding:0;}
+
+fieldset {margin: 15px 0 0 0; border:1px solid #ccc; width:90%; float:left; clear:left;}
+fieldset legend {margin:0 0 3px 10px; font-size:120%; background:#fff; padding:0 5px 0 5px;}
+fieldset label {display:block; font-weight: normal; float:left; width:135px; text-align: right; margin:0 10px 0 0;}
+fieldset input {width:200px;}
+fieldset textarea {width:200px;}
+fieldset select {width:204px;}
+fieldset ol {padding: 10px 10px 0 10px; list-style: none;}
+fieldset li {padding: 0 0 10px 0; float:left; clear:left; width: 100%;}
+fieldset span {font-size:70%;}
+fieldset.submit {border-style: none;}
+
+#textarealeft {width:540px; font-size:80%; float:left;}
+#textarealeft p#clearleft {clear:left;}
+#textarearight {width:167px; font-size:80%; float:right;}
+
+#tip {width:162px; height:205px; background:url(btn_freefundraisingtips.jpg) no-repeat;}
+#tip p {font-size:75%; color:#fff; line-height:1.2; padding:30px 5px 0 9px;}
+#tip span {font-style:italic; color:#fff;}
+
+/* --- Primary Navigation Elements ---*/
+#topnav {width: 942px; height: 61px;}
+#topnav ul {list-style:none; height:61px; display:block;}
+#topnav li {background: url(topnav.png) no-repeat top left; display:block; float:left; height:61px;}
+#topnav a {height: 61px; display: block;}
+
+#topnav #menu1 {width:159px; background-position:0 -1235px;}
+#topnav #menu2 {width:184px; background-position:0 -309px;}
+#topnav #menu3 {width:191px; background-position:0 -617px;}
+#topnav #menu4 {width:229px; background-position:0 -926px;}
+#topnav #menu5 {width:179px; background-position:0 0;}
+
+#topnav #menu1 a:hover {display: block; height:49px; background: url(topnav.png) 0 -1443px;}
+#topnav #menu2 a:hover {display: block; height:49px; background: url(topnav.png) 0 -518px;}
+#topnav #menu3 a:hover {display: block; height:49px; background: url(topnav.png) 0 -827px;}
+#topnav #menu4 a:hover {display: block; height:49px; background: url(topnav.png) 0 -1136px;}
+#topnav #menu5 a:hover {display: block; height:49px; background: url(topnav.png) 0 -210px;}
+
+#topnav #menu1 #active {display: block; height:61px; background: url(topnav.png) 0 -1334px;}
+#topnav #menu2 #active {display: block; height:61px; background: url(topnav.png) 0 -408px;}
+#topnav #menu3 #active {display: block; height:61px; background: url(topnav.png) 0 -716px;}
+#topnav #menu4 #active {display: block; height:61px; background: url(topnav.png) 0 -1025px;}
+#topnav #menu5 #active {display: block; height:61px; background: url(topnav.png) 0 -99px;}
+
+#leftnav {float:left; text-align:left; width:220px; background: url(bg_leftnav.png) no-repeat;}
+#leftnav ul {}
+#leftnav li {height:30px; line-height: 30px; padding:0 0 0 5px; font-size:70%; font-weight: bold; list-style-position: inside; list-style-image: url(arrow_single.png);}
+#leftnav li:hover {width:203px; background: url(bg_leftnav_button_hover.jpg) repeat-x;}
+#leftnav li#active {width:220px; background: url(leftnav_arrow.png) no-repeat; list-style-image: url(arrow_single_transparent.png);}
+#leftnav a {color:#333; text-decoration: none;}
+#leftnav a:hover {}
+#leftnav p {padding:10px 0 2px 4px;}

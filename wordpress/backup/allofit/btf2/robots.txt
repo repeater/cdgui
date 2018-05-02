@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /free-e-zine-thankyou.html
+Disallow: /free-coaching-session-thankyou.html
+Disallow: /free-effectiveness-review-thankyou.html
+Allow: /
+

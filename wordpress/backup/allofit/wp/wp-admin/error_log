@@ -1,0 +1,4 @@
+[14-Sep-2015 21:52:01 UTC] WordPress database error Table 'repeater_wpPlay.wp_icl_strings' doesn't exist for query SELECT id FROM wp_icl_strings WHERE context='a3 Portfolios'  made by delete_plugins, uninstall_plugin, include('/plugins/a3-portfolio/uninstall.php')
+[01-Dec-2016 01:45:34 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 9181421 bytes) in /home/repeater/public_html/wp/wp-includes/wp-db.php on line 1261
+[02-Dec-2016 06:22:24 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 9181345 bytes) in /home/repeater/public_html/wp/wp-includes/wp-db.php on line 1261
+[11-Jan-2017 22:08:39 America/Chicago] PHP Fatal error:  Call to undefined function __() in /home/repeater/public_html/wp/wp-admin/menu.php on line 23

@@ -1,0 +1,84 @@
+﻿body {
+    position: relative;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+hr {
+    border-color: $shadow;
+}
+
+a.anchor{
+    display: block; 
+    position: relative; 
+    visibility: hidden;
+}
+
+.hoverable .dropdown:hover .dropdown-menu {
+    display: block;
+ }
+
+.icon-link {
+    color: $shadow;
+    &:hover {
+        color: $color;
+    }
+}
+
+.fa-to-glyph {
+    display: inline-block;
+    text-align: center;
+    width: 19px;
+    margin-top: -1px;
+}
+
+.divider {
+    height: 1px;
+    border-top: 1px solid $shadow;
+    margin: 15px -0 3px;
+    .col & {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+ul.noindent {
+    margin: 0; 
+    padding-left: 19px;
+}
+
+ul.indent-sm {
+    margin: 0; 
+    padding-right: 17px;
+    padding-left: 25px;
+}
+
+.box {
+    display: block;
+    background-color: $bleach;
+    border: 1px solid $base;
+    margin-top: 15px;
+    padding: 15px;
+    &.clickable {
+        cursor: pointer;
+        &:hover {
+            background-color: $cloud;
+            border-color: $shadow;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}

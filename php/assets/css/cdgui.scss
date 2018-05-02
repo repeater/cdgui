@@ -1,0 +1,69 @@
+// colors
+$black:       #000    !important;
+$white:       #fff    !important;
+$dblue:       #039    !important;
+$mblue:       #0099cc !important;
+$lblue:       #66ccff !important;
+$hblue:       #cfc    !important;
+$dgrey:       #666    !important;
+$mgrey:       #c0c0c0 !important;
+$lgrey:       #efeeee !important;
+
+
+body {
+  background-color: white;
+}
+nav {
+  position: fixed;
+  z-index: 13;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0 8px 18px -12px rgba(0,0,0,0.2), 0 3px 15px 0 rgba(0,0,0,0.1), 0 5px 5px -5px rgba(0,0,0,0.1);
+  // border-bottom: 1px solid #efeeee;
+  a {
+    color: $lgrey;
+    display: block;
+    padding: 23px 0;
+  }
+}
+.main-content {
+  margin-top: 70px;
+}
+.my-intro,
+.my-work,
+.my-play,
+.my-contact {
+  padding: 26px;
+}
+.my-intro {
+  background-color: $lgrey;
+  p {
+    // column-count: 2;
+  }
+}
+.my-work {
+  background-color: $white;
+}
+.my-play {
+  background-color: $lgrey;
+}
+.my-contact {
+  background-color: $hblue;
+}
+.my-projects {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 23px 46px;
+  background-color: $white;
+  border: 2px solid $mgrey;
+  -webkit-transition: border-color .5s ease-out;
+  -moz-transition: border-color .5s ease-out;
+  -o-transition: border-color .5s ease-out;
+  transition: border-color .5s ease-out;
+  &:hover {
+    border-color: $dgrey;
+  }
+}

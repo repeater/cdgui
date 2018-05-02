@@ -1,0 +1,73 @@
+== Change log ==
+
+= 1.3 = 
+* Added: French translation fr_FR.po and fr_FR.mo
+
+= 1.2 = 
+* Added: Single Post navigation
+* Bug Fixed: Changed esc_attr_e to echo esc_attr in searchform.php
+* Compatible with WordPress 4.3
+* Removed support for WordPress version less than 4.1
+* Updated: Sidr script
+* Updated: codes to comply with deprecating PHP4 style constructors in WordPress 4.3
+
+= 1.1 =
+* Added: Support for Random Header Image
+* Added Featured Content "Display Content" option
+* Bug Fixed: Removal of extra '/' in sub-categories in breadcrumb and updates in breadcrumb
+* Bug Fixed: Blog page featured image not overwriting default header image
+* Bug Fixed: Header Text only CSS change when not displaying site title and tagline
+* Bug Fixed: Metabox Options not saving properly
+* Combined options for Featured Content and renamed the section From Featured Content Options to Featured Content in Customizer
+* Combined options for Featured Slider and renamed the section From Featured Slider Options to Featured Slider in Customizer
+* Removed unnecessary js from custom customizer js as support for WordPress versions less than 4.0 is not required
+* Updated Social Widget name
+
+= 1.0 =
+* Bug Fixed: Html is now allowed in Featured Content Headline and Sub-headline
+* Bug Fixed: Header Right Social Icon
+* Bug fixed: Check class logo left or logo right only when there is logo and logo is not disabled
+* Bug Fixed: Featured Content Layout Type css issue
+* Bug Fixed: added missing keyword _nx:1,2,4c and esc_html__ in language file gridalicious.pot
+* Bug Fixed: Skype Social icon and open link in new window for email issues
+* Bug Fixed: Sidebar layout option 
+* Bug Fixed: Social icon wrap
+* Removed unnecessary file gridalicious-menu.js
+* Removed duplicate class site-­header as ID found
+* Replaced the_title() with the_title_attribute() where title is used as attribute
+* Replaced all require_once with require
+* Replaced demo featured content text
+
+= 0.5 =
+* Added Option in Enable Header Image: Excluding Home, Page/Post Featured Image
+* Fixed header text condition for Sidebar
+* Removed jquery cookie and its dependencies
+
+= 0.4 =
+* Added gridalicious- prefix to some js handles
+* Bug Fixed: undefined index $page_for_posts for Featured Header Image
+* Bug Fixed: featured-heading-wrap, $headline and $subheadline empty check in featured content
+* Bug Fixed: Featured Content missing classes entry-header and entry-title
+* Bug Fixed: Html is now allowed in Promotion Headline
+* Bug Fixed: Breadcrumb undefined index issue
+* Changed get_page to get_post as get_page is depreciated
+* Renamed "custom_meta_box_nonce" renamed to  "gridalicious_custom_meta_box_nonce"
+* Sanitized custom metabox settings
+
+= 0.3 =
+* Bug Fixed: Homepage Category Options ( missing function gridalicious_sanitize_category_list ) 
+
+= 0.2 =
+* Bug Fixed: classes for excerpt and content fixed in content.php
+* Bug Fixed: missing breadcrumb separator in category
+* Bug Fixed: Dark color scheme css
+* Initial Release in Catchthemes.com
+* Removed unnecessary options from Default Layout and Archive Content Layout
+* Removed unnecessary secondary sidebar
+* Removed unnecessary mobile menu script
+* Renamed CATCHBASE_* to GRIDALICIOUS_*
+* Updated image sizes
+* Updated options for Single page/post image layout
+
+= 0.1 =
+* Submitted to WordPress.org

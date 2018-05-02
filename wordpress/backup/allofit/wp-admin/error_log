@@ -1,0 +1,1 @@
+[14-Sep-2015 21:52:01 UTC] WordPress database error Table 'repeater_wpPlay.wp_icl_strings' doesn't exist for query SELECT id FROM wp_icl_strings WHERE context='a3 Portfolios'  made by delete_plugins, uninstall_plugin, include('/plugins/a3-portfolio/uninstall.php')

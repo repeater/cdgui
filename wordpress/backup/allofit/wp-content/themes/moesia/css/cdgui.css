@@ -1,0 +1,121 @@
+/*
+Darkest Blue:		#0A4163
+Dark Blue:	 		#0E5E90;
+Medium Blue:		#41aaf7;
+Light Blue:			#9ed3f9;
+
+Gold:				#AB9612
+*/
+p,
+.skills-desc,
+.fadeIn,
+.mailItem,
+ul.laundrylist li {
+	line-height:28px;
+	color:#747278;
+}
+	p,
+	.skills-desc {font-size:15px;}
+	.fadeIn,
+	.mailItem {font-weight:bold;}
+.entry-header {display:none;}
+.page .hentry {border:none;}
+.websense div a:hover {background:url('http://wp.cdgui.com/wp-content/uploads/2015/09/websenseon.png') no-repeat 0 0;}
+h1.site-title {font-size:22px !important;}
+.anchorz {height:1px;}
+h3 {color:#0A4163 !important;}
+	.widget-title:after {
+	    position: absolute;
+    	left: calc(50% - 35px);
+	    width: 70px;
+    	content: "";
+	    border-bottom: 6px double #9ed3f9 !important;
+    	bottom: -10px;
+	}
+.slick-prev:before,
+.slick-next:before {color:#9ed3f9;}
+.top-bar {
+	background:#0E5E90;
+	height:60px;
+}
+.skill-bar>div {background:#AB9612;}
+.slick-slide {vertical-align:middle;}
+
+/* contact form overrides */
+.mailContainer {
+	width:100%
+}
+	.mailBox {
+		display:inline-block;
+		width:45%;
+		margin:0 10px;
+		vertical-align:top;
+	}
+		.mailItem {}
+			.mailItem textarea,
+			.mailItem input[type=text] {
+				width:100%;
+				border:1px solid #ccc;
+				background: #efeeee;
+				color:#747278 !important;
+			}
+			
+			.mailItem textarea {height:168px;}
+		.mailButton {
+			width:100%;
+			text-align:center;
+		}
+/* mail form */
+	.sent .mailContainer {display:none;}
+	.sent .wpcf7-response-output {
+		border:1px solid #0E5E90;
+		background:#9ed3f9;
+		color:#fff;
+		text-align:center;
+		font-size:24px;
+		padding:20px 0;
+	}
+		
+		
+/* Employee portion */
+.employee {width:100% !important;}
+	.employee img {
+		margin-top:12px;
+		display:inline-block !important;
+		vertical-align:top;
+	}
+	.employee h4 {display:none;}
+	.employee .employee-desc {
+		width:60% !important;
+		margin-left: 40px !important;
+		display:inline-block !important;
+		border:none !important;
+	}
+	
+/* Gallery */	
+.pupup-element.active {
+	top:57px !important;
+}
+	.img-thumb {border:1px solid #9ed3f9;}
+	body #huge_it_portfolio_popup_list_3 .popup-wrapper_3 .right-block .description p {padding-bottom:14px !important;}
+	.portfolio-boxes {text-align:center !important;}
+	#panel-18-6-0-1 h3.widget-title {margin-bottom:-24px !important;}
+	#panel-18-6-0-0 {
+		height:1px !important;;
+		margin:0 !important;
+		padding:0  !important;
+	}
+	.hugeitmicro .hugeitmicro-item {left:101px !important;}
+	
+/* social */
+.craigsocial {
+	position:relative !important;
+	float:right !important;
+	width:100px !important;
+}
+	.craigsocial a {
+		display:inline-block !important;
+		width:16px !important;
+		height:16px !important;
+		margin-left:13px;
+	}

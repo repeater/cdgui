@@ -1,0 +1,15 @@
+User-Agent: *
+
+Allow: /index.html
+Allow: /assets
+
+Disallow: /allofit
+Disallow: /user
+Disallow: /includes
+Disallow: /admin
+Disallow: /yourls
+Disallow: /error_log
+Disallow: /yourls-loader.php
+Disallow: /yourls-infos.php
+Disallow: /yourls-go.php
+Disallow: /yourls-api.php

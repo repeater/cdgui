@@ -1,0 +1,27 @@
+TODO::: 20141127
+
+
+*  Rewrite button generation code, such that an Auth service returns an
+array with buttons. Buttons should contain an order parameter to determine
+the displayed order.
+
+      Login/register sorted, however LINK is a problem. Separation code not
+      implemented yet. OAUTH specific code in bsauth.php !!!
+      Needs to be extracted to blaatoauth.php such that the code becomes 
+      service independant.
+
+*  What else is required to support multiple auth providers? Is it possible to
+generate separation code?
+
+* Sync Library / check for hard coded services
+
+* Add some more icons per default
+
+* Hide "Default logo" if none present
+
+* Can we integrate the BS logo in there?
+
+* Update documentation on website
+
+* Bigger rewrite required? More Object Oriented?
+--------------------------------------------------------------------------------

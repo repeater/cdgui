@@ -1,0 +1,3 @@
+[29-Sep-2016 14:43:39 UTC] WordPress database error Query was empty for query 
+ made by activate_plugin, do_action('activate_blaatschaap-oauth/blaatoauth.php'), call_user_func_array, blaatoauth_install_database
+[29-Sep-2016 15:26:49 UTC] PHP Fatal error:  Class 'OAuth' not found in /home/repeater/public_html/io/wp-content/plugins/blaatschaap-oauth/bs_oauth_config.php on line 775

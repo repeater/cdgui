@@ -1,0 +1,688 @@
+﻿<link href="Content/bootstrap.min.css" rel="stylesheet" />
+<link href="Content/font-awesome.min.css" rel="stylesheet" />
+<link href="Content/main.css" rel="stylesheet" />
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+
+<script type="text/javascript">
+    var msgSending = {
+        begin: function () {
+            $('[data-eadms-sending-message]').show();
+        },
+        complete: function () {
+            $('[data-eadms-sending-message]').hide();
+        }
+    }
+</script>
+
+<style>
+    .samplebox {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+    }
+
+        .samplebox.red {
+            background-color: red;
+        }
+
+        .samplebox.black {
+            background-color: black;
+        }
+
+        .samplebox.yellow {
+            background-color: yellow;
+        }
+
+        .samplebox.orange {
+            background-color: orange;
+        }
+
+        .samplebox.blue {
+            background-color: blue;
+        }
+
+        .samplebox.green {
+            background-color: green;
+        }
+
+        .samplebox.purple {
+            background-color: purple;
+        }
+</style>
+<!DOCTYPE html>
+
+<head>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Content/Images/eadms.ico" type="image/x-icon">
+    <link rel="icon" href="Content/Images/eadms.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+
+
+    <!-- Styles and Fonts -->
+    <link href="Content/main.css" rel="stylesheet" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,800,400' rel='stylesheet' type='text/css' />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <title>EADMS -</title>
+
+	
+    <link href="Content/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="Content/owl.carousel/assets/owl.theme.default.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="Scripts/modernizr-2.6.2.js"></script>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top main-nav">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">
+                    <img class="logo" src="Content/Images/eadms-io-logo-online-testing.gif" style="height: 61px;" />
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            
+           
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <!--<li><a href="index.html">Home</a></li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Products</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="index.html#eadms1">eadms</a>
+                            </li>
+                            <li><a href="index.html#reportcard">Report Card</a></li>
+                            <!--<li><a>Common Core Blueprint</a></li>-->
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="index.html#itembanks">Item Banks</a>
+                        <!--<ul class="dropdown-menu" role="menu">
+                            <li><a href="index.html#itembanks"><span class="eadms-lower">eadms</span> TK2</a></li>
+                            <li><a href="index.html#itembanks">INSPECT</a></li>
+                            <li><a href="index.html#itembanks">Measured Progress</a></li>
+                        </ul>-->
+                    </li>
+                    <!--<li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Transition</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="dropdown-subheader">Transitioning from my current assessment system</a></li>
+                            <li class="divider"></li>
+                            <li><a>Illuminate</a></li>
+                            <li><a>School City</a></li>
+                            <li><a>OARS</a></li>
+                            <li><a>Edusoft/Data Director</a></li>
+                            <li><a>Datawise</a></li>
+                            <li class="divider"></li>
+                            <li><a class="dropdown-subheader">Integrating with my SIS</a></li>
+                            <li class="divider"></li>
+                            <li><a>Aeries</a></li>
+                        </ul>
+                    </li-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">About Us</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="about.html#ourTeam">Our Team</a></li>
+                            <li><a href="about.html#partners">Our Partners</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="pressreleases.html">Press Releases</a>
+                    </li>
+                    <!-- <li><a href="https://ioeducation.com/contact" title="Contact EADMS">Contact Us</a></li> -->
+                    <!--<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Events</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="2016-User-Conference-closed.html">2016 User Conference</a></li>
+
+                        </ul>
+                    </li>-->
+                    <!-- <li><a href="http://eadms.com" target="_blank">Login</a></li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            <a href="https://eadms.com" class="btn btn-default">Log Me In</a>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="contact-container">
+    	<div class="contact-content">
+    		Request more information or demo&nbsp;&nbsp;<a href="https://ioeducation.com/contact" class="btn btn-default">Contact EADMS</a>
+    	</div>
+    </div>
+ <!--<div class="alert alert-info" role="alert" style="margin-bottom:0;">...</div>-->
+    <div class="container-fluid">
+        <main role="main" class="main">
+            <section class="banner">
+            	<!--<div class="announcement">
+            		<div class="container">
+            			<img src="Content/Images/2016-conference.png" />
+						<p>Join Adrylan Communications as we kick-off the first <a href="2016-User-Conference.html" title="2016 EADMS user Conference Details">EADMS User Conference</a> in Ontario, CA Wednesday, February 17, 2016. EADMS users will have the opportunity to spend the day with members of the EADMS Data, Programming, and Customer Care team.</p>
+						<p>The EADMS User Conference will offer a full day of presentations, hands on trainings, and live demonstrations to enhance your EADMS user skills, as well as opportunities to share what you know and gather new information. Administrators and teachers are encouraged to attend.</p>
+						<div class="announcementbtn">
+							<a class="btn btn-default" href="http://registration.eadmsk12.com/events/eadms-2016-user-conference/" role="button" target="_blank">REGISTER TODAY</a>
+						</div>
+					</div>          	
+            	</div>-->
+                <div class="banner-img">
+                    <img src="Content/Images/little_girl_at_computer.jpg" />
+                </div>
+                <div class="surface">
+                    <div class="container">
+                        <img src="Content/Images/imac-ipad.png" />
+                    </div>
+                </div>
+            </section>
+            <section class="new-section" style="margin-top:33px;border-top:1px solid #ccc;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <a class="anchor" id="eadms1"></a>
+                            <h2 class="inline-block">Educator's Assessment Data Management System</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="features eadms">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-sm-4">
+                            <a class="box clickable" data-toggle="modal" data-target="#onlineTesting">
+                                <h4>Online Testing</h4>
+                                <img src="Content/Images/online-testing-shot2.jpg" />
+
+                            </a>
+                        </div>
+                        <div class="col col-sm-4">
+                            <a class="box clickable" data-toggle="modal" data-target="#reporting">
+                                <h4>Powerful Reporting</h4>
+
+                                <img src="Content/Images/reporting-shot.jpg" />
+                            </a>
+                        </div>
+                        <div class="col col-sm-4">
+                            <a class="box clickable" data-toggle="modal" data-target="#itemCreation">
+                                <h4>Item Creation</h4>
+                                <img src="Content/Images/equation-editor.png" /><br />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-4">
+                            <a class="box clickable" data-toggle="modal" data-target="#scanningScoring">
+                                <h4>Scoring and Scanning</h4>
+                                <img src="Content/Images/cr-grading-shot.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="col col-sm-4">
+                            <a class="box clickable" data-toggle="modal" data-target="#pft">
+                                <h4>Physical Fitness Test</h4>
+                                <img src="Content/Images/reporting/PFT.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="col col-sm-4">
+                            <!-- Non-clickable Box -->
+                            <div class="box">
+                                <h4>Data</h4>
+                                <img src="Content/Images/data.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="new-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <a class="anchor" id="reportcard"></a>
+                            <h2 class="inline-block">Report Card</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="features report-card">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-sm-4">
+                            <h4>eadms Standards Based Report Cards</h4>
+                            <p>
+                                eadms report card module is an easy to use, customizable template that allows teachers the
+                                convenience of building and printing a report card, while never leaving our platform. Demographic data and attendance information is populated
+                                directly from the district SIS via eadms. The Report Card comment section allows teachers to select from district-created comments, or
+                                create their own. Default values and “Select all” features save teachers time by pre-filling the report cards allowing the teachers to adjust
+                                grades/scores seamlessly.
+                            </p>
+
+                            <p>We offer multiple language translations, and allow for supplemental documents to be attached directly to the report cards.</p>
+
+                            <p><a href="index.html#contact" class="btn btn-default">Request a Demo</a></p>
+
+                        </div>
+                        <div class="col col-sm-8">
+                            <img src="Content/Images/reporting/EADMS-report-card.PNG" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="new-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <a class="anchor" id="itembanks"></a>
+                            <h2 class="inline-block">Item Banks</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="features item-banks">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-sm-12">
+                        	<h4><span class="eadms-lower">eadms</span> K-2, INSPECT, MEASURED PROGRESS, FLUENCE, TE21</h4>
+                            <p>
+                                The eadms platform is equipped to house custom-made district item banks, and vendor created item banks, such as EADMS K-2 Common Core, INSPECT Item Bank, Measured Progress Item Bank, Fluence Item Bank, and TE21’s CASE Item Bank. Item bank vendors upload pre-made, easy to access Tests, Interims, Benchmarks, and Quizzes. In addition, eadms will import any licensed publishers items of your choosing. Licenses to these premium item banks are available in EADMS today.
+                            </p>
+                        </div>
+                        <div class="col col-sm-4">
+                            <img style="margin-bottom: 15px;" src="Content/Images/sample-tk2.png" />
+                            <img class="logo" src="Content/Images/eadms-logo-tm-SpotColor.png" alt="" />
+                            <h5><span class="eadms-lower">eadms</span> K-2 Co-Op Item Bank</h5>
+                            EADMS Kindergarten through 2nd grade Co-Op is in its final stages of development.  With over 3000 Common Core aligned items, the cooperative
+                            has worked hard to develop challenging items that include some of the new technology enhanced features.  K-2nd grade teachers are using these
+                            items to formative assessments in EADMS, offering their students plenty of practice before they experience their first Common Core test in 3rd grade.
+                        </div>
+                        <div class="col col-sm-4">
+                             <img style="margin-bottom: 15px;" src="Content/Images/fluence-ss.png" />
+                            <img class="logo" src="Content/Partner_Logos/fluence.png" alt="" />
+                            <h5>Fluence</h5>
+                            EADMS includes the CCR Content Bank and CCR Quick Check content from Fluence, with the CCR Performance Tasks and CCR K-1 Assessments coming soon. The CCR Content Bank from Fluence is a native college- and career-ready assessment content for math and ELA in grades 2 through high school includes more than 35,000 items and 1,500 complex texts. The CCR Quick Checks is 636 fixed-form quick checks that address the key instructional concepts embedded in college- and career-ready standards (clusters for math, staircase of text complexity for ELA).
+                        </div>
+                        <div class="col col-sm-4">
+                            <img style="margin-bottom: 15px;" src="Content/Images/sample-inspect.png" />
+                            <a href="http://www.keydatasys.com/" target="_blank"><img class="logo" src="Content/Partner_Logos/kds-logo.png" alt="" /></a>
+                            <h5>INSPECT<sup>&reg;</sup> Common Core Item Bank</h5>
+                            The innovative item bank has over 33,000 items written to assess the Common Core. Practical results allow educators to identify which students
+                            are having difficulty mastering particular concepts and the likely reasons why. Our items can be used as the driving force behind the shifts in
+                            pedagogy, opening doors for innovative teaching and student learning.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-6">
+                            <img style="margin-bottom: 15px;" src="Content/Images/sample-te21.png" />
+                            <a href="http://www.te21.com/" target="_blank"><img class="logo" src="Content/Partner_Logos/te-21.png" alt="TE21 CASE Item Bank" /></a>
+                            <h5>TE21</h5>
+                            <span data-read-more-container="true">
+                                TE21, Inc. is an education company that offers assessments aligned to College and Career-Ready Standards/Common Core State Standards (CCSS), intervention, professional development, and a slate of other education improvement efforts for school and districts.
+                            </span>
+                        </div>
+                        <div class="col col-sm-6">
+                            <img style="margin-bottom: 15px;" src="Content/Images/sample-mp.png" />
+                            <a href="http://www.measuredprogress.org/" target="_blank"><img class="logo" src="Content/Partner_Logos/MeasuredProgressLogo.png" alt="" /></a>
+                            <h5>Measured Progress COMMON CORE Formative Item Bank </h5>
+                            <span data-read-more-container="true">
+                                This is a high quality field tested item bank with premade “Testlets” and quarterly benchmarks. We built our item bank from the ground up to
+                                the specifications of both SBAC and PARCC. With over 7,600 questions covering ELA and Math, your teachers will realize a deeper understanding
+                                of student misconceptions. This is a formative item bank…meaning we broke the standards down to manageable chunks that inform instruction.
+                                <span data-read-more-section="true">
+                                    <br /><br />
+                                    Measured Progress, a not-for-profit organization, is a pioneer in authentic, standards-based assessments. Since 1983, we have successfully
+                                    partnered with more than 30 states and hundreds of districts across the nation to support their assessment programs. Today, we develop 21st
+                                    century assessments for classrooms, districts, states, and consortia. We are proud to be the nation’s leading provider of alternate assessments
+                                    for students with cognitive disabilities.
+                                </span><br />
+                                <a href="#" data-read-more-link="true"></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- 
+<footer class="footer">
+<section class="prefooter">
+                <div id="map-canvas"></div>
+            </section>
+            <section class="mainfooter container">
+                <div class="row">
+                    <div class="col col-sm-7">
+                        <a class="anchor" id="contact"></a>
+                        <section class="contact-block">
+                            <h2>Contact Us</h2>
+                            <form action="form.php" method="post">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+
+                                            <label style="display:block;">Full Name <span class="text-danger">*</span></label>
+                                            <input type="text" name="fullName" value="" style="width:100%;border:1px solid #ccc;" placeholder="Enter Full Name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label style="display:block;">District <span class="text-danger">*</span></label>
+                                            <input type="text" name="district" value="" style="width:100%;border:1px solid #ccc;" placeholder="Enter District" />
+                                        </div>
+                                    </div>
+                                </div><div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label style="display:block;">Email address <span class="text-danger">*</span></label>
+                                            <input type="text" name="email" value="" style="width:100%;border:1px solid #ccc;" placeholder="Enter Email address"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label style="display:block;">Subject <span class="text-danger">*</span></label>
+                                            <input type="text" name="subject" value="" style="width:100%;border:1px solid #ccc;" placeholder="Enter Subject"/>
+                                        </div>
+                                    </div>
+                                </div><div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label style="display:block;">Message <span class="text-danger">*</span></label>
+                                            <textarea type="text" name="Message" value="" style="width:100%;height:150px;border:1px solid #ccc;" placeholder="Enter Message"> </textarea>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="submit" class="btn btn-default" values="Submit" />
+                                        <div class="btn-label pull-right" disabled><span class="text-danger">*</span> Marks a required field</div>
+                                    </div>
+                                </div>
+                            </form>
+
+
+                        </section>
+                    </div>
+                    <div class="col col-sm-5">
+                        <aside class="contact-block">
+                            <h3>Find Us</h3>
+                            <div><span class="glyphicon glyphicon-envelope"></span><span>sales@eadms.com</span></div>
+                            <div><span class="glyphicon glyphicon-phone-alt"></span><span>(951) 506-3593</span></div>
+                            <div><span class="glyphicon glyphicon-map-marker"></span><span>Main Office (Sales & Support)</span></div>
+                            <div><span class="fa-to-glyph"></span><span>25014 Las Brisas Road #D</span></div>
+                            <div><span class="fa-to-glyph"></span><span>Murrieta, CA 92562</span></div>
+                            <div><span class="glyphicon glyphicon-time"></span><span>Hours 6am – 5pm PST</span></div>
+                            <div class="divider"></div>
+                            <div><a href="https://www.facebook.com/adrylancommunications" target="_blank"><span class="fa-to-glyph"><i class="fa fa-facebook-official"></i></span><span>Visit us on Facebook!</span></a></div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+        </footer>
+ -->
+        <footer>
+            <section class="postfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            &copy; 2016 IO Education. All rights reserved.
+                            <span style="float: right;">eadms - by <a href="https://ioeducation.com" title="eadms - by IO Education" target="_blank">IO Education</a></span>
+                            <script>
+                                (function (i, s, o, g, r, a, m) {
+                                    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                                        (i[r].q = i[r].q || []).push(arguments)
+                                    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+                                })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+                                ga('create', 'UA-69342239-2', 'auto');
+                                ga('send', 'pageview');
+
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+
+    </div>
+</body>
+<script src="Scripts/respond.js"></script>
+<script src="Scripts/bootstrap.min.js"></script>
+
+
+
+<script src="Scripts/bootstrap-hover-dropdown.min.js"></script>
+
+<script src="Scripts/jquery-1.10.2.min.js"></script>
+<script src="Content/owl.carousel/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('[data-read-more-section]').hide();
+        var moreText = 'More...';
+        var lessText = 'Show less'
+        var linkText = moreText;
+        $('[data-read-more-link]').text(linkText);
+        $('[data-read-more-link]').click(function (e) {
+            $(this).closest('[data-read-more-container]').find('[data-read-more-section]').toggle();
+            if (linkText == moreText) {
+                linkText = lessText;
+                $('[data-read-more-link]').text(linkText);
+            } else {
+                linkText = moreText;
+                $('[data-read-more-link]').text(linkText);
+            }
+            return false;
+        });
+
+    });
+</script>
+
+<!-- Modal -->
+<div class="modal fade carousel-div" id="onlineTesting" role="dialog" aria-labelledby="onlineTesting" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="online-testing-label">Online Testing</h4>
+            </div>
+
+            <div class="modal-body">
+                <div id="online-testing-carousel" class="owl-carousel">
+                    <div>
+                        <img src="Content/Images/online-testing/k2-1.png" />
+                        <div class="carousel-label">
+                            <h4>K-2</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="Content/Images/online-testing/k2-2.png" />
+                        <div class="carousel-label">
+                            <h4>K-2</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="Content/Images/online-testing/k2-3.png" />
+                        <div class="carousel-label">
+                            <h4>K-2</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="Content/Images/online-testing/3-5a.png" />
+                        <div class="carousel-label">
+                            <h4>3-5</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="Content/Images/online-testing/6-8a.png" />
+                        <div class="carousel-label">
+                            <h4>6-8</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="Content/Images/online-testing/6-8b.png" />
+                        <div class="carousel-label">
+                            <h4>6-8</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="Content/Images/online-testing/6-8c.png" />
+                        <div class="carousel-label">
+                            <h4>6-8</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="Content/Images/online-testing/hs1.png" />
+                        <div class="carousel-label">
+                            <h4>High School</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="Content/Images/online-testing/hs2.png" />
+                        <div class="carousel-label">
+                            <h4>High School</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="Content/Images/online-testing/hs3.png" />
+                        <div class="carousel-label">
+                            <h4>High School</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="Content/Images/online-testing/hs4.png" />
+                        <div class="carousel-label">
+                            <h4>High School</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade carousel-div" id="reporting" role="dialog" aria-labelledby="reporting" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="reporting-modal-title">Powerful Reporting</h4>
+            </div>
+            <div class="modal-body">
+                <div id="reporting-carousel" class="owl-carousel">
+                    <img src="Content/Images/reporting/report01.png" />
+                    <img src="Content/Images/reporting/report02.png" />
+                    <img src="Content/Images/reporting/report03.png" />
+                    <img src="Content/Images/reporting/report04.png" />
+                    <img src="Content/Images/reporting/report05.png" />
+                    <img src="Content/Images/reporting/report06.png" />
+                    <img src="Content/Images/reporting/report07.png" />
+                    <img src="Content/Images/reporting/report08.png" />
+                    <img src="Content/Images/reporting/report09.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade carousel-div" id="itemCreation" role="dialog" aria-labelledby="itemCreation" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="technology-enhanced-modal-label">Technology Enhanced Items</h4>
+            </div>
+            <div class="modal-footer" style="padding: 0;">
+                <img src="Content/Images/item-creation/item-creation-basic.png" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade carousel-div" id="scanningScoring" role="dialog" aria-labelledby="scanningScoring" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="scanningScoring-modal-label">Scanning and Scoring</h4>
+            </div>
+            <div class="modal-body">
+                <div id="scoring-and-scanning-carousel" class="owl-carousel">
+                    <img src="Content/Images/cr-grading-shot.jpg" alt="" />
+                    <img src="Content/Images/scan-sheet.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade carousel-div" id="pft" role="dialog" aria-labelledby="pft" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="pft-modal-label">PFT (Physical Fitness Test)</h4>
+            </div>
+            <div class="modal-footer">
+                <img src="Content/Images/reporting/PFT.png" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="Content/leaflet-0.7.3/leaflet.js"></script>
+
+
+<script>
+    function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var myLatlng = new google.maps.LatLng(33.573912, -117.182836);
+        var mapOptions = {
+            scrollwheel: false,
+            center: myLatlng,
+            zoom: 9,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'eadms'
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            nav: true,
+            navText: [
+              "<span class='glyphicon glyphicon-chevron-left'></span>",
+              "<span class='glyphicon glyphicon-chevron-right'></span>"
+            ],
+        });
+    });
+</script>
