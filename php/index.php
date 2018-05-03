@@ -15,18 +15,24 @@
    <nav>
      <div class="container-fluid">
          <div class="row">
-           <div class="col-md-3 col-sm-12 text-center">
+           <div class="col-6 col-sm-12 col-md-3 text-left text-sm-center">
              <a href="#my-home" title="">logo</a>
            </div>
-           <div class="col-md-3 col-sm-4 text-sm-center">
+           <div class="col-sm-4 col-md-3 text-sm-center d-none d-sm-block">
              <a href="#my-work" title="">work</a>
            </div>
-           <div class="col-md-3 col-sm-4 text-sm-center">
+           <div class="col-sm-4 col-md-3 text-sm-center d-none d-sm-block">
              <a href="#my-play" title="">play</a>
            </div>
-           <div class="col-md-3 col-sm-4 text-sm-center">
+           <div class="col-sm-4 col-md-3 text-sm-center d-none d-sm-block">
              <a href="#my-contact" title="">contact</a>
            </div>
+           <div class="col-6 text-right text-sm-center text-md-left d-sm-none topnav" id="myTopnav">
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+             <a href="#news">Work</a>
+             <a href="#contact">Play</a>
+             <a href="#about">Contact</a>
+          </div>
          </div>
      </div>
    </nav>
@@ -93,5 +99,16 @@
      </div>
    </div>
    <!-- <?php echo '<p>Hello World</p>'; ?> -->
+   <script>
+   /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+  </script>
  </body>
 </html>
