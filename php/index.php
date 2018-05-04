@@ -11,33 +11,33 @@
     <link rel="stylesheet" href="assets/css/cdgui.min.css" type="text/css" media="all" />
  </head>
  <body class="cdgui-home">
-   <a name="my-home"></a>
    <nav>
      <div class="container-fluid">
          <div class="row">
            <div class="col-6 col-sm-12 col-md-3 text-left text-sm-center">
-             <a href="#my-home" title="">logo</a>
+             <a href="#home" title="">logo</a>
            </div>
            <div class="col-sm-4 col-md-3 text-sm-center d-none d-sm-block">
-             <a href="#my-work" title="">work</a>
+             <a href="#work" title="">work</a>
            </div>
            <div class="col-sm-4 col-md-3 text-sm-center d-none d-sm-block">
-             <a href="#my-play" title="">play</a>
+             <a href="#play" title="">play</a>
            </div>
            <div class="col-sm-4 col-md-3 text-sm-center d-none d-sm-block">
-             <a href="#my-contact" title="">contact</a>
+             <a href="#contact" title="">contact</a>
            </div>
            <div class="col-6 text-right text-sm-center text-md-left d-sm-none topnav" id="myTopnav">
              <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-             <a href="#news">Work</a>
-             <a href="#contact">Play</a>
-             <a href="#about">Contact</a>
+             <a href="#work">Work</a>
+             <a href="#play">Play</a>
+             <a href="#contact">Contact</a>
           </div>
          </div>
      </div>
    </nav>
    <div class="container-fluid main-content">
      <div class="row">
+       <a name="home" class="anchor"></a>
        <div class="col my-intro text-center">
           <div class="row justify-content-center">
             <div class="col-8">
@@ -48,7 +48,7 @@
        </div>
      </div>
      <div class="row">
-       <a name="my-work"></a>
+       <a name="work" class="anchor"></a>
        <div class="col my-work">
           <div class="row">
             <div class="col-xs-12 col-md-3 text-center">
@@ -72,7 +72,7 @@
        </div>
      </div>
      <div class="row">
-       <a name="my-play"></a>
+       <a name="play" class="anchor"></a>
        <div class="col my-play">
           <div class="row">
             <div class="col-xs-12 col-md-3 text-center">
@@ -85,7 +85,7 @@
        </div>
      </div>
      <div class="row">
-       <a name="my-contact"></a>
+       <a name="contact" class="anchor"></a>
        <div class="col my-contact">
           <div class="row">
             <div class="col-xs-12 col-md-3 text-center">
@@ -103,10 +103,10 @@
    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
     function myFunction() {
         var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
+        if (x.className === "col-6 text-right text-sm-center text-md-left d-sm-none topnav") {
             x.className += " responsive";
         } else {
-            x.className = "topnav";
+            x.className = "col-6 text-right text-sm-center text-md-left d-sm-none topnav";
         }
     }
   </script>
