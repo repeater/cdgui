@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/zxe3vdb.css");
+
 // colors
 $black:       #000    !important;
 $white:       #fff    !important;
@@ -12,6 +14,7 @@ $lgrey:       #efeeee !important;
 
 body {
   background-color: white;
+  font-family: "fira-sans",sans-serif;
 }
 .anchor {
   display: block;
@@ -34,6 +37,10 @@ nav {
     display: block;
     padding: 23px 0;
   }
+}
+h1, h2 {
+  font-family: "museo-slab", serif;
+  font-weight: 700;
 }
 .main-content {
   margin-top: 75px;
@@ -147,5 +154,14 @@ nav {
     float: none;
     display: block;
     text-align: center;
+  }
+}
+.social-media {
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    margin: 0 13px;
   }
 }
