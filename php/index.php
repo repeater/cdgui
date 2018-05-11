@@ -38,62 +38,67 @@
      </div>
    </nav>
    <div class="container-fluid main-content">
-     <div class="row">
+     <div class="row right-slanted">
        <a name="home" class="anchor"></a>
        <div class="col my-intro text-center">
           <div class="row justify-content-center">
             <div class="col-8">
-              <h1>Craig Godfrey</h1>
-              <p>I have been developing web-based solutions for a variety of customers for quite sometime. I am thankful to have found a career path that allows me to be creative and tackle challenges along the way.</p>
+              <p>I am <strong>Craig Godfrey</strong> and I have been developing web-based solutions for a variety of customers for quite sometime. I am thankful to have found a career path that allows me to be creative and tackle challenges along the way.</p>
             </div>
           </div>
        </div>
      </div>
-     <div class="row">
+     <div class="row right-slanted">
        <a name="work" class="anchor"></a>
        <div class="col my-work">
           <div class="row">
-            <div class="col-xs-12 col-md-3 text-center">
+            <div class="col-xs-12 col-md-3 text-center title">
               <h2>Projects</h2>
             </div>
-           <div class="col-xs-12 col text-center text-md-left">
+           <div class="col-xs-12 col text-center text-md-left content-wrapper">
             <p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
           </div>
         </div>
         <div class="row">
-          <div class="col text-center my-projects">
-            VoxTelesys
+          <div class="col-12 col-md-3 offset-md-3 text-center my-projects">
+            <div class="project-wrapper">
+              VoxTelesys
+            </div>
           </div>
-          <div class="col text-center my-projects">
-            Sightly
+          <div class="col-12 col-md-3 text-center my-projects">
+            <div class="project-wrapper">
+              Sightly
+            </div>
           </div>
-          <div class="col text-center my-projects">
-            IO Education
+          <div class="col-12 col-md-3 text-center my-projects">
+            <div class="project-wrapper">
+              IO Education
+            </div>
           </div>
         </div>
        </div>
      </div>
-     <div class="row">
+     <div class="row right-slanted">
        <a name="play" class="anchor"></a>
        <div class="col my-play">
           <div class="row">
-            <div class="col-xs-12 col-md-3 text-center">
+            <div class="col-xs-12 col-md-3 text-center title">
               <h2>Downtime</h2>
             </div>
-           <div class="col-xs-12 col text-center text-md-left">
+           <div class="col-xs-12 col text-center text-md-left content-wrapper">
             <p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
           </div>
         </div>
        </div>
      </div>
-     <div class="row">
+     <div class="row right-slanted">
        <a name="contact" class="anchor"></a>
        <div class="col my-contact">
           <div class="row">
-            <div class="col-xs-12 col-md-3 text-center">
+            <div class="col-xs-12 col-md-3 text-center title">
               <h2>Connect</h2>
             </div>
-           <div class="col-xs-12 col text-center text-md-left">
+           <div class="col-xs-12 col text-center text-md-left content-wrapper">
             <p>People are great. Those of you that are like-minded s well as those of you who might have the next product challenge. Regardless, shoot me an email and lets connect.
             <p><small>(Please fill out all the fields though so I can properly respond.)</small></p>
             <!-- Begin MailChimp Signup Form -->
@@ -122,7 +127,7 @@
                 	<input type="text" name="PHONE" class="required" value="" id="mce-PHONE">
                 </div>
                 <div class="mc-field-group col-xs-12 col-lg-6 col-xl-12">
-                	<label for="mce-MMERGE2">A Brief Note
+                	<label for="mce-MMERGE2">What's on your mind
                 </label>
                 	<input type="text" value="" name="MMERGE2" class="required" id="mce-MMERGE2">
                 </div>
@@ -131,7 +136,7 @@
                 		<div class="response" id="mce-success-response" style="display:none"></div>
                 	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_15b8d7bea7bd83d7029efa5d1_ed6a4b544f" tabindex="-1" value=""></div>
-                    <div class="col clear text-center"><input type="submit" value="Connect" name="connect" id="mc-embedded-subscribe" class="button"></div>
+                    <div class="col clear text-center"><input type="submit" value="Connect" name="connect" id="mc-embedded-subscribe" class="button hblue"></div>
                     </div>
                 </form>
               </div>
@@ -140,13 +145,14 @@
         </div>
        </div>
      </div>
-     <div class="social-media text-center">
-       <ul>
-         <li><a href="http://cdgui.com/downloads/craig-godfrey-resume.pdf" title="Current Resume" target="_blank"><i class="far fa-file-pdf"></i></a></li>
-         <li><a href="https://www.linkedin.com/in/craiggodfrey/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-         <li><a href="https://twitter.com/cgodfrey" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
-       </ul>
-
+     <div class="row right-slanted">
+       <div class="my-social col-12 text-center">
+         <ul>
+           <li><a href="http://cdgui.com/downloads/craig-godfrey-resume.pdf" title="Current Resume" target="_blank"><i class="far fa-file-pdf"></i></a></li>
+           <li><a href="https://www.linkedin.com/in/craiggodfrey/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+           <li><a href="https://twitter.com/cgodfrey" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
+         </ul>
+       </div>
      </div>
    </div>
    <!-- <?php echo '<p>Hello World</p>'; ?> -->
